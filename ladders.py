@@ -59,7 +59,7 @@ def getKnownLadders(reset=False):
         jsonFiles = os.path.join(c.LADDER_FOLDER, "*.json")
         for ladderFilepath in glob.glob(jsonFiles):
             filename = os.path.basename(ladderFilepath)
-            name = filename.rstrip("\.json").lstrip("ladder_")
+            name = re.search("^ladder_(.*?).json$", filename).groups()[0]
             ladder = Ladder(name)
             ladderCache[ladder.name] = ladder
     return ladderCache
