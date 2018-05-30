@@ -2,7 +2,8 @@
     "allowNewPlayers": true,
     "inactivePurge": false,
     "inactiveScan": true,
-    "ipAddress": "localhost",
+    "ipAddress": "127.0.0.1",
     "maxLocalGamesAllowed": 0,
-    "name": "this_machine"
+    "name": "localhost",
+    "serverPort": 7801
 }

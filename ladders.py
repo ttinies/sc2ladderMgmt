@@ -73,6 +73,7 @@ class Ladder(object):
         # define default values and their type
         self.name                   = ""
         self.ipAddress              = c.LOCALHOST
+        self.serverPort             = c.DEFAULT_PORT
         self.allowNewPlayers        = True
         self.maxLocalGamesAllowed   = 0
         self.inactiveScan           = True
