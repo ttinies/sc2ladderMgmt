@@ -1,0 +1,8 @@
+{
+    "allowNewPlayers": true,
+    "inactivePurge": false,
+    "inactiveScan": true,
+    "ipAddress": "localhost",
+    "maxLocalGamesAllowed": 0,
+    "name": "this_machine"
+}
