@@ -35,8 +35,8 @@ if __name__=='__main__':
             if True:    print(addLadder(kwargs))
         except ValueError:
             print("ERROR: key '%s' must specify a value using '=' followed by a value (no whitespace)."%(terms[i][0]))
-    elif options.get:   print(getLadder(options.ladderget))
-    elif options.rm:    print(delLadder(options.ladderdel))
+    elif options.get:   print(getLadder(options.get))
+    elif options.rm:    print(delLadder(options.rm ))
     else:
         for ladder in itervalues(defs):
             print("object:", ladder)

@@ -19,5 +19,5 @@ limitations under the License.
 
 from .ladders import addLadder, getLadder, delLadder, getKnownLadders
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
