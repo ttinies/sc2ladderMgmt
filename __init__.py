@@ -17,7 +17,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-from .ladders import addLadder, getLadder, delLadder, getKnownLadders
+from .functions import addLadder, getLadder, delLadder, getKnownLadders
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
