@@ -1,0 +1,9 @@
+{
+    "allowNewPlayers": true,
+    "inactivePurge": false,
+    "inactiveScan": true,
+    "ipAddress": "204.229.7.84",
+    "maxLocalGamesAllowed": 4,
+    "name": "versentiedge",
+    "serverPort": 7801
+}
