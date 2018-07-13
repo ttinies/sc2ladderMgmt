@@ -1,3 +1,8 @@
+[![PyPI](https://img.shields.io/pypi/v/sc2ladderMgmt.svg)](https://pypi.org/project/sc2ladderMgmt/)
+[![Build Status](https://travis-ci.org/ttinies/sc2ladderMgmt.svg?branch=master)](https://travis-ci.org/ttinies/sc2ladderMgmt)
+[![Coverage Status](https://coveralls.io/repos/github/ttinies/sc2ladderMgmt/badge.svg?branch=master)](https://coveralls.io/github/ttinies/sc2ladderMgmt?branch=master)
+![Crates.io](https://img.shields.io/crates/l/rustc-serialize.svg)
+
 # sc2ladderMgmt
 
 Define available servers for Starcraft 2 AI & bot matches.
