@@ -3,8 +3,6 @@ from __future__ import absolute_import
 from __future__ import division       # python 2/3 compatibility
 from __future__ import print_function # python 2/3 compatibility
 
-from six import iteritems, itervalues # python 2/3 compatibility
-
 from sc2ladderMgmt import addLadder, getLadder, delLadder, getKnownLadders, __version__
 
 from argparse import ArgumentParser
@@ -38,9 +36,9 @@ if __name__=='__main__':
     elif options.get:   print(getLadder(options.get))
     elif options.rm:    print(delLadder(options.rm ))
     else:
-        for ladder in itervalues(defs):
+        for ladder in defs.values():
             print("object:", ladder)
-            for k,v in iteritems(ladder.attrs):
+            for k,v in ladder.attrs.items():
                 print("%24s : %s"%(k, v))
         if defs:    print("Found %d ladder definition(s)"%(len(defs)))
         else:       print("No ladder definitions are available.")

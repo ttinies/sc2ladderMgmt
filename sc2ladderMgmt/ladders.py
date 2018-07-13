@@ -6,9 +6,6 @@ from __future__ import absolute_import # python 2/3 compatibility
 from __future__ import division        # python 2/3 compatibility
 from __future__ import print_function  # python 2/3 compatibility
 
-from builtins import str as text # python 2/3 compatibility
-from six import iteritems # python 2/3 compatibility
-
 import json
 import os
 
@@ -33,7 +30,7 @@ class Ladder(object):
         self.inactiveScan           = True
         self.inactivePurge          = False
         # initialize with new values
-        if   isinstance(source, text):      self.load(source) # assume a filename to load
+        if   isinstance(source, str):       self.load(source) # assume a filename to load
         elif isinstance(source, dict):      self.update(source)
         elif isinstance(source, Ladder):    self.update(source.__dict__) # copy constructor
         self.update(override)
@@ -80,7 +77,7 @@ class Ladder(object):
     def update(self, attrs):
         """update attributes initialized with the proper type"""
         self._validateAttrs(attrs)
-        for k,v in iteritems(attrs):
+        for k,v in attrs.items():
             typecast = type( getattr(self, k) )
             if typecast==bool and v=="False":   newval = False # "False" evalued as boolean is True because its length > 0
             else:                               newval = typecast(v.lower())
