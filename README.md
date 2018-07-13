@@ -1,6 +1,6 @@
 # sc2ladderMgmt
 
-# Define available servers for Starcraft 2 AI & bot matches
+Define available servers for Starcraft 2 AI & bot matches.
 
 ### About
 A ladder system that allows you to play Starcraft2 outside of battle.net on your local machine or across the internet
