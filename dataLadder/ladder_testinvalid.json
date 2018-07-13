@@ -1,0 +1,9 @@
+{
+    "allowNewPlayers": false,
+    "inactivePurge": false,
+    "inactiveScan": true,
+    "ipAddress": "1.2.3.4",
+    "maxLocalGamesAllowed": 0,
+    "name": "testinvalid",
+    "serverPort": 7801
+}
