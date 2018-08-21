@@ -19,4 +19,4 @@ limitations under the License.
 
 from sc2ladderMgmt.functions import addLadder, getLadder, delLadder, getKnownLadders
 
-from sc2ladderMgmt.__version__ import *
+from sc2ladderMgmt import __version__

@@ -17,7 +17,7 @@ if __name__=='__main__':
     defs = getKnownLadders()
     ALLOWED_LADDERS = list(defs)
     description = "Available valid ladder values for NAME:%s    %s"%(os.linesep, ("%s    "%os.linesep).join(ALLOWED_LADDERS))
-    parser = ArgumentParser(description=description, epilog="version: %s"%__version__)
+    parser = ArgumentParser(description=description, epilog="version: %s"%__version__.__version__)
     optionsLadderOps = parser.add_argument_group('ladder operations')
     optionsLadderOps.add_argument("--add"       , action="store_true"   , help="Add a new ladder definition from provided criterira values. ('name' is required; see criteria definition below).")
     optionsLadderOps.add_argument("--get"       , type=str              , help="the name of the ladder to use.", metavar="NAME")
