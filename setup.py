@@ -17,7 +17,7 @@ DESCRIPTION = "A system for managing ladder profiles for AI, bot and human Starc
 URL = "https://github.com/ttinies/sc2ladderMgmt"
 EMAIL = "help.fool@versentiedge.com"
 AUTHOR = "Versentiedge LLC"
-REQUIRES_PYTHON = ">2.6"
+REQUIRES_PYTHON = ">3.4"
 VERSION = None
 
 # What packages are required for this module to be executed?
